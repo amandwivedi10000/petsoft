@@ -41,6 +41,7 @@ const config = {
         return {
           id: user.id,
           email: user.email,
+          hasAccess: user.hasAccess,
         }
       }
     })
