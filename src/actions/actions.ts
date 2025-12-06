@@ -1,6 +1,6 @@
 "use server"
 
-import { signIn, signOut } from "@/lib/auth"
+import { signIn, signOut } from "@/lib/auth-no-edge"
 import prisma from "@/lib/db"
 import { sleep } from "@/lib/utils"
 import { PetFormSchema, authSchema, petIdSchema } from "@/lib/validations"
