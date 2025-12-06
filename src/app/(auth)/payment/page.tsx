@@ -24,7 +24,7 @@ export default function Page({
       {
         searchParams.success && (
           <Button
-            disabled={status === "loading" || session?.user.hasAccess}
+            disabled={status === "loading" || !!session?.user.hasAccess}
             onClick={async () => {
               await update(true)
               router.push("/app/dashboard")
